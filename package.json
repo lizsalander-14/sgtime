@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npm run bld1 & npm run bld2",
+    "start": "start npm run bld1 & start npm run bld2",
     "bld1": "node hello1s.js",
     "bld2": "node hello2s.js"
   },
