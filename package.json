@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run bld1 & npm run bld2",
+    "bld1": "node hello1s.js",
+    "bld2": "node hello2s.js"
   },
   "keywords": [],
   "author": "",
