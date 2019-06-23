@@ -1,3 +1,4 @@
+const log = require('./log');
 let CronJob=require('cron').CronJob;
 new CronJob('*/2 * * * *',function(){
     var currentdate = new Date();
@@ -7,5 +8,5 @@ new CronJob('*/2 * * * *',function(){
         + currentdate.getHours() + ":"
         + currentdate.getMinutes() + ":"
         + currentdate.getSeconds();
-    console.log(datetime+'\tHello from 2');
+    log.info(datetime+'\tHello from 2');
 },null,true,'America/Los_Angeles');
